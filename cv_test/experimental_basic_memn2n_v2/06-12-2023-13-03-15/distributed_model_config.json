@@ -1,0 +1,156 @@
+{
+    "feature_class": {
+        "value": "text_kb_supervision_features",
+        "flags": [
+            "converter"
+        ]
+    },
+    "optimizer_args": {
+        "value": {
+            "beta_1": 0.9,
+            "beta_2": 0.999,
+            "epsilon": 1e-08,
+            "learning_rate": 0.0001
+        },
+        "flags": [
+            "model_class"
+        ]
+    },
+    "filter_names": {
+        "value": null,
+        "flags": [
+            "processor"
+        ]
+    },
+    "optimizer": {
+        "value": "adam",
+        "flags": [
+            "model_class"
+        ]
+    },
+    "embedding_dimension": {
+        "value": 256,
+        "flags": [
+            "tokenizer",
+            "model_class"
+        ]
+    },
+    "embedding_model_type": {
+        "value": null,
+        "flags": [
+            "tokenizer"
+        ]
+    },
+    "add_gradient_noise": {
+        "value": true,
+        "flags": [
+            "model_class"
+        ]
+    },
+    "l2_regularization": {
+        "value": 0.0005,
+        "flags": [
+            "model_class"
+        ]
+    },
+    "build_embedding_matrix": {
+        "value": false,
+        "flags": [
+            "tokenizer"
+        ]
+    },
+    "answer_weights": {
+        "value": [
+            128
+        ],
+        "flags": [
+            "model_class"
+        ]
+    },
+    "dropout_rate": {
+        "value": 0.5,
+        "flags": [
+            "model_class"
+        ]
+    },
+    "tokenizer_args": {
+        "value": {
+            "oov_token": 1
+        },
+        "flags": [
+            "tokenizer"
+        ]
+    },
+    "clip_gradient": {
+        "value": true,
+        "flags": [
+            "model_class"
+        ]
+    },
+    "hops": {
+        "value": 1,
+        "flags": [
+            "model_class"
+        ]
+    },
+    "max_grad_norm": {
+        "value": 40,
+        "flags": [
+            "model_class"
+        ]
+    },
+    "embedding_info": {
+        "value": {
+            "mode": "sum"
+        },
+        "flags": [
+            "model_class"
+        ]
+    },
+    "memory_lookup_info": {
+        "value": {
+            "mode": "mlp",
+            "weights": [
+                512
+            ]
+        },
+        "flags": [
+            "model_class"
+        ]
+    },
+    "extraction_info": {
+        "value": {
+            "mode": "sigmoid"
+        },
+        "flags": [
+            "model_class"
+        ]
+    },
+    "reasoning_info": {
+        "value": {
+            "mode": "concat"
+        },
+        "flags": [
+            "model_class"
+        ]
+    },
+    "partial_supervision_info": {
+        "value": {
+            "flag": false,
+            "coefficient": 1.0,
+            "margin": 0.5,
+            "mask_by_attention": false
+        },
+        "flags": [
+            "model_class",
+            "processor",
+            "converter"
+        ]
+    },
+    "max_tokens_limit": {
+        "value": 70,
+        "flags": [
+            "converter"
+        ]
+    }
+}

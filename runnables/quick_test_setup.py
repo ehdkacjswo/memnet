@@ -27,7 +27,7 @@ if __name__ == '__main__':
     task_type = 'task1_kb'
 
     # A, CH, CR, TER, LTD
-    category = 'A'
+    category = 'LTD'
 
     # This should be fixed
     test_type = "cv_test"
