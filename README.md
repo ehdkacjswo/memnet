@@ -89,3 +89,13 @@ You can check Terms of Service (ToS) dataset, comprised of 100 documents, in loc
 * label: general unfairness label -> 1 if at least one unfairness category label is set to 1, 0 otherwise
 * text: sentence text as processed by Stanford CoreNLP
 * A|CH|CR|LTD|TER_targets: each sentence labelled as unfair and belonging to one the aforementioned unfairness categories is further annotated with the ground truth set of legal rationales. In particular, the set is encoded as the list of positional indexes w.r.t. KB .txt files (check local_database/KB/\*.txt files). For example [0, 5, 7] set for the category A is equivalent to saying *the first, the sixth and the eighth sentences as listed in A.txt*.
+
+# Project Results
+
+You can check the trained models and there results in ./cv_test/experimental_basic_memn2n_v2/
+
+* 06-12-2023-05-58-49 contains model trained to predict A clauses
+* 06-12-2023-07-14-38 contains model trained to predict CH clauses
+* 06-12-2023-09-03-18 contains model trained to predict CR clauses
+* 06-12-2023-13-03-15 contains model trained to predict TER clauses
+* 11-12-2023-20-55-21 contains model trained to predict LTD clauses
