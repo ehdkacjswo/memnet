@@ -99,3 +99,5 @@ You can check the trained models and there results in ./cv_test/experimental_bas
 * 06-12-2023-09-03-18 contains model trained to predict CR clauses
 * 06-12-2023-13-03-15 contains model trained to predict TER clauses
 * 11-12-2023-20-55-21 contains model trained to predict LTD clauses
+
+Also to run the test, you can use utility.distributed_test_utils.cross_validation_forward_pass function
