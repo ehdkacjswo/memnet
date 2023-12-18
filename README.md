@@ -101,3 +101,7 @@ You can check the trained models and there results in ./cv_test/experimental_bas
 * 11-12-2023-20-55-21 contains model trained to predict LTD clauses
 
 Also to run the test, you can use utility.distributed_test_utils.cross_validation_forward_pass function
+
+# Simplifying the ToS
+
+TOS_simplifier.ipynb simplifies ToS clauses
